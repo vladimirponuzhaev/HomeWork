@@ -10,6 +10,7 @@ Write("Введите число: ");
 int N = int.Parse(ReadLine()!);
 
 Write($"Все чётные числа: ");
+
 for (int i = 1; i <= N; i = i + 1)
 {
     if (i % 2 == 0)
