@@ -4,6 +4,8 @@
 using System;
 using static System.Console;
 
+Clear();
+
 Write("Введите число: ");
 int number = int.Parse(ReadLine()!);
 
