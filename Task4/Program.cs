@@ -9,7 +9,7 @@ Clear();
 Write("Введите число: ");
 int N = int.Parse(ReadLine()!);
 
-Write($"Все чётные числа: ");
+Write($"Все чётные числа от 1 до {N}: ");
 
 for (int i = 1; i <= N; i = i + 1)
 {
