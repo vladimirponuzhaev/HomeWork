@@ -15,5 +15,11 @@ if (numberA > numberB)
 }
 else
 {
-    Console.WriteLine($"Числа равны");
+    Console.WriteLine($"Большее число = {numberB}");
+    Console.WriteLine($"Меньшее число = {numberA}");
+}
+
+if (numberA == numberB)
+{
+    Console.WriteLine("Числа равны");
 }
