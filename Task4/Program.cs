@@ -7,15 +7,13 @@ using static System.Console;
 Clear();
 
 Write("Введите число: ");
-int number = int.Parse(ReadLine()!);
+int N = int.Parse(ReadLine()!);
 
-int count = 0;
-
-while (number % 2 == 0)
+Write($"Все чётные числа: ");
+for (int i = 1; i <= N; i = i + 1)
 {
-    DataMisalignedException
-    count = count + 1;
+    if (i % 2 == 0)
+    {
+        Write($"{i}, ");
+    }
 }
-
-
-
