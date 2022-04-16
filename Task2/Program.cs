@@ -7,13 +7,13 @@ using static System.Console;
 Clear();
 
 WriteLine("Введите первое число: ");
-int numberA = int.Parse(ReadLine());
+int numberA = int.Parse(ReadLine()!);
 
 WriteLine("Введите второе число: ");
-int numberB = int.Parse(ReadLine());
+int numberB = int.Parse(ReadLine()!);
 
 WriteLine("Введите третье число: ");
-int numberC = int.Parse(ReadLine());
+int numberC = int.Parse(ReadLine()!);
 
 int max = numberA;
 
