@@ -1,0 +1,15 @@
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/bin/Debug/net6.0/Task1
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/bin/Debug/net6.0/Task1.deps.json
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/bin/Debug/net6.0/Task1.runtimeconfig.json
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/bin/Debug/net6.0/Task1.dll
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/bin/Debug/net6.0/Task1.pdb
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/Task1.csproj.AssemblyReference.cache
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/Task1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/Task1.AssemblyInfoInputs.cache
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/Task1.AssemblyInfo.cs
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/Task1.csproj.CoreCompileInputs.cache
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/Task1.dll
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/refint/Task1.dll
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/Task1.pdb
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/Task1.genruntimeconfig.cache
+/Users/ponuzhaev/Documents/Документы — MacBook Air (Mr. V)/Факультет_Разработчик/5.2 Знакомство с языками программирования (семинары)/HomeWork/Task1/obj/Debug/net6.0/ref/Task1.dll
