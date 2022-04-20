@@ -13,7 +13,7 @@ Clear();
 // if (AnyNumber > 99)
 // {
 //     while (AnyNumber > 999)
-//         AnyNumber /= 10;
+//     AnyNumber /= 10;
 //     AnyNumber %= 10;
 //     Console.WriteLine($"В введённом числе третья цифра: {AnyNumber}");
 // }
