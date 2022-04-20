@@ -12,7 +12,7 @@ int FiveDigitNumber = int.Parse(ReadLine()!);
 if (FiveDigitNumber / 10000 == FiveDigitNumber % 10 && FiveDigitNumber / 1000 % 10 == FiveDigitNumber / 10 % 10)
 {
     WriteLine();
-    WriteLine($"В введённое число: {FiveDigitNumber}, является палиндромом.");
+    WriteLine($"Введённое число: {FiveDigitNumber}, ЯВЛЯЕТСЯ палиндромом.");
     WriteLine();
 }
 else
