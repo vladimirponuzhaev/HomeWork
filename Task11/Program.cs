@@ -13,7 +13,7 @@ double Number = double.Parse(ReadLine()!);
 WriteLine();
 Write($"Таблица кубов чисел от 1 до {Number}: ");
 
-for (double F = 1; F <= Number; F++)
+for (double Cube = 1; Cube <= Number; Cube++)
 {
-    Write($"{Math.Pow(F, 3)}, ");
+    Write($"{Math.Pow(Cube, 3)}, ");
 }
