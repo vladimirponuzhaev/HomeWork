@@ -5,6 +5,8 @@ using System;
 using static System.Console;
 using static System.Convert;
 
+Clear();
+
 Write("Введите любое число: ");
 int inputNumber = ToInt32(ReadLine());
 WriteLine($"Сумма цифр числа {inputNumber}: {SumDigits(inputNumber)}");
