@@ -28,5 +28,5 @@ void PrintArray(int[] array)
     {
         position++;
     }
-    Write(String.Join(", ", array) + ".");
+    WriteLine(String.Join(", ", array) + ".");
 }
