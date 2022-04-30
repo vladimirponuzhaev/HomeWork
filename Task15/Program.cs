@@ -9,7 +9,6 @@ Clear();
 int size = 4;
 PrintResult(FillArray(size));
 
-
 int[] FillArray(int size)
 {
     int[] array = new int[size];
@@ -22,15 +21,15 @@ int[] FillArray(int size)
 
 void PrintResult(int[] array)
 {
-    int even = 0;
-    int uneven = 0;
+    int evenNumber = 0;
+    int unevenNumber = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] % 2 == 0) even++;
-        else uneven++;
+        if (array[i] % 2 == 0) evenNumber++;
+        else unevenNumber++;
     }
     WriteLine(String.Join(", ", array) + ".");
     WriteLine();
-    WriteLine($"Количество чётных чисел в массиве: {even}, количество нечётных чисел в массиве: {uneven}.");
+    WriteLine($"Количество чётных чисел в массиве: {evenNumber}, количество нечётных чисел в массиве: {unevenNumber}.");
     WriteLine();
 }
