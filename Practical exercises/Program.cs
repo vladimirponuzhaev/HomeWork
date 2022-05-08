@@ -311,6 +311,31 @@ Clear();
 // string Coordinates = coordinateX > 0 && coordinateY > 0 ? $"Введены координаты 1-й чертверти." : coordinateX < 0 && coordinateY > 0 ? $"Введены координаты 2-й чертверти." : coordinateX < 0 && coordinateY < 0 ? $"Введены координаты 3-й чертверти." : coordinateX > 0 && coordinateY < 0 ? $"Введены координаты 4-й чертверти." : $"Введены некорректные координаты X и/или Y!";
 // WriteLine(Coordinates);
 
+// Семинар 3 - Задача 13: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве
+// Наример: // A(3, 6), B(2, 1) -> 5,09; A(7, -5), B(1, -1) -> 7,21.
+// Write("Введите координату X1: ");
+// var X1 = ToInt32(ReadLine());
+// Write("Введите координату Y1: ");
+// var Y1 = ToInt32(ReadLine());
+// Write("Введите координату X1: ");
+// var X2 = ToInt32(ReadLine());
+// Write("Введите координату Y1: ");
+// var Y2 = ToInt32(ReadLine());
+// var DistancePoint = Sqrt(Pow(X2 - X1, 2) + Pow(Y2 - Y1, 2));
+// WriteLine($"Расстояние между двумя точками в 2D пространстве = {Round(DistancePoint, 2)}");
+
+// Семинар 3 - Задача 14: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел от 1 до N.
+// Например: 5 -> 1, 4, 9, 16, 25; 2-> 1, 4
+// Write("Введите любое число: ");
+// int AnyNumber = ToInt32(ReadLine());
+// int QuadOfNumber = 1;
+// Write($"{AnyNumber} -> ");
+// while (QuadOfNumber <= AnyNumber)
+// {
+//     Write($"{Pow(QuadOfNumber, 2)} ");
+//     QuadOfNumber++;
+// }
+
 
 
 //----------------------------------------------------------------------
