@@ -1,6 +1,7 @@
 ﻿using System;
 using static System.Console;
 using static System.Convert;
+using static System.Math;
 
 Clear();
 
@@ -303,12 +304,12 @@ Clear();
 
 // Семинар 3 - Задача 12: Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка.
 // Наример: // Например: X = -3, Y = 5 -> 2-я четверть.
-Write("Введите координату X ≠ 0: ");
-int coordinateX = ToInt32(ReadLine());
-Write("Введите координату Y ≠ 0: ");
-int coordinateY = ToInt32(ReadLine());
-string Coordinates = coordinateX > 0 && coordinateY > 0 ? $"Введены координаты 1-й чертверти." : coordinateX < 0 && coordinateY > 0 ? $"Введены координаты 2-й чертверти." : coordinateX < 0 && coordinateY < 0 ? $"Введены координаты 3-й чертверти." : coordinateX > 0 && coordinateY < 0 ? $"Введены координаты 4-й чертверти." : $"Введены неверные координаты!";
-WriteLine(Coordinates);
+// Write("Введите координату X ≠ 0: ");
+// int coordinateX = ToInt32(ReadLine());
+// Write("Введите координату Y ≠ 0: ");
+// int coordinateY = ToInt32(ReadLine());
+// string Coordinates = coordinateX > 0 && coordinateY > 0 ? $"Введены координаты 1-й чертверти." : coordinateX < 0 && coordinateY > 0 ? $"Введены координаты 2-й чертверти." : coordinateX < 0 && coordinateY < 0 ? $"Введены координаты 3-й чертверти." : coordinateX > 0 && coordinateY < 0 ? $"Введены координаты 4-й чертверти." : $"Введены некорректные координаты X и/или Y!";
+// WriteLine(Coordinates);
 
 
 
