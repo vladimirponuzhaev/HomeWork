@@ -2,16 +2,17 @@
 using static System.Console;
 using static System.Convert;
 using static System.Math;
+using static System.String;
 
 Clear();
 
 // Семинар 1 – Задача 0: Напишите программу, которая на вход принимает число и выдаёт его квадрат (число умноженное на само себя).
 // Например: 4 -> 16, -3 -> 9, -7 -> 49.
-// Console.WriteLine("Введите число");
+// Console.Write("Введите число: ");
 // int Number = int.Parse(Console.ReadLine()!);
 // int sqr = Number * Number;
 // int sqr1 = Convert.ToInt32(Math.Pow(Number, 2));
-// WriteLine($"Произведение = {sqr} {sqr1}");
+// WriteLine($"Квадрат числа {Number} = {sqr} {sqr1}");
 
 // Семинар 1 – Задача 1: Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго числа.
 // Например: a = 5, b = 25 -> да; a = 2, b = 10 -> нет; a = 9, b = -3 -> нет; a = -3, b = 9 -> да.
@@ -231,15 +232,18 @@ Clear();
 // if (AnyNumber > 99) // Решение математическим методом
 // {
 //     while (AnyNumber > 999)
+//     {
 //         AnyNumber /= 10;
-//     AnyNumber %= 10;
-//     WriteLine($"{AnyNumber}");
+//         AnyNumber %= 10;
+//         WriteLine($"{AnyNumber}");
+//     }
+
 // }
 // else WriteLine($"В ведённом числе {AnyNumber} - третьей цифры нет");
 // string ThirdDigit = AnyNumber.ToString(); // Решение через массив
 // if (AnyNumber >= 100)
 // {
-// WriteLine($"Третья цифра введённого числа {AnyNumber} - {ThirdDigit[2]}");
+//     WriteLine($"Третья цифра введённого числа {AnyNumber} - {ThirdDigit[2]}");
 // }
 // else WriteLine($"В ведённом числе {AnyNumber} - третьей цифры нет");
 
@@ -325,7 +329,7 @@ Clear();
 // WriteLine($"Расстояние между двумя точками в 2D пространстве = {Round(DistancePoint, 2)}");
 
 // Семинар 3 - Задача 14: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел от 1 до N.
-// Например: 5 -> 1, 4, 9, 16, 25; 2-> 1, 4
+// Например: 5 -> 1, 4, 9, 16, 25; 2 -> 1, 4
 // Write("Введите любое число: ");
 // int AnyNumber = ToInt32(ReadLine());
 // int QuadOfNumber = 1;
@@ -338,14 +342,140 @@ Clear();
 
 // ДЗ 3 - Задача 9: Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 // Например: 14212 -> нет, 12821 -> да, 23432 -> да.
-
+// WriteLine("Введите любое пятизначное число: ");
+// int FiveDigitNumber = ToInt32(ReadLine());
+// if (FiveDigitNumber / 10000 == FiveDigitNumber % 10 && FiveDigitNumber / 1000 % 10 == FiveDigitNumber / 10 % 10)
+// {
+//     WriteLine();
+//     WriteLine($"Число {FiveDigitNumber} является палиндромом.");
+//     WriteLine();
+// }
+// else
+// {
+//     WriteLine();
+//     WriteLine($"Число {FiveDigitNumber} НЕ является палиндромом.");
+//     WriteLine();
+// }
 
 // ДЗ 3 - Задача 10: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 // Например: A(3,6,8); B(2, 1, -7) -> 15.84, A(7, -5, 0); B(1, -1, 9) -> 11.53.
-
+// Write("Введите координату X1: ");
+// var X1 = ToInt32(ReadLine());
+// Write("Введите координату Y1: ");
+// var Y1 = ToInt32(ReadLine());
+// Write("Введите координату Z1: ");
+// var Z1 = ToInt32(ReadLine());
+// Write("Введите координату X2: ");
+// var X2 = ToInt32(ReadLine());
+// Write("Введите координату Y2: ");
+// var Y2 = ToInt32(ReadLine());
+// Write("Введите координату Z2: ");
+// var Z2 = ToInt32(ReadLine());
+// var DistancePoint = Sqrt(Pow(X2 - X1, 2) + Pow(Y2 - Y1, 2) + Pow(Z2 - Z1, 2));
+// WriteLine($"Расстояние между двумя точками в 3D пространстве = {Round(DistancePoint, 2)}");
 
 // ДЗ 3 - Задача 11: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 // Например: 3 -> 1, 8, 27; 5 -> 1, 8, 27, 64, 125.
+// WriteLine("Введите любое число: ");
+// int AnyNumber = ToInt32(ReadLine());
+// int CubeNumbers = 1;
+// while (CubeNumbers <= AnyNumber)
+// {
+//     Write($"{Pow(CubeNumbers, 3)} ");
+//     CubeNumbers++;
+// }
+
+// Вывод в строку массива, используя - String.Join(” “, x)
+// int[] r = new int[5];
+// string t = "123456789";
+// for (int i = 0; i < 5; i++)
+// {
+//     r[i] = new Random().Next(10);
+// }
+// WriteLine(String.Join(", ", t.ToArray())); // Вывод строки через "," t.ToArray - разбей строку t на символы
+// WriteLine(String.Join(", ", r)); // Вывод масссива в строку
+
+// Семинар 4 - Задача 15: Напишите программу, которая принимает на вход число (А) и выдаёт сумму чисел от 1 до А.
+// Например: 7 -> 28, 4 -> 10, 8 -> 36.
+// Write("Ведите А: ");
+// WriteLine(Summa(ToInt32(ReadLine())));
+// int Summa(int number)
+// {
+//     int sum = 0;
+//     for (int i = 1; i <= number; i++)
+//     {
+//         sum += i;
+//         if (i < number) Write(i + " + ");
+//         else Write(i + " ");
+//     }
+//     Write($"= ");
+//     return sum;
+// }
+
+// Семинар 4 - Задача 16: Напишите программу, котрая принимает число и выдаёт количество цифр в числе.
+// Например: 23 -> 2, 4 -> 1, 353 -> 3.
+// Write("Введите любое число: ");
+// int number = ToInt32(ReadLine());
+// WriteLine($"В числе {number} - {Digits(number)} цифр(а)(ы)");
+// // WriteLine("Количество цифр введённого числа " + number + " = {0}", Digits(number));
+// int Digits(int numS)
+// {
+//     int i = 0;
+//     while (numS > 0)
+//     {
+//         numS = numS / 10;
+//         i++;
+//     }
+//     return i;
+// }
+
+// Семинар 4 - Задача 17: Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
+// Например: Например: 4 -> 24, 5 -> 120.
+// Write("Введите любое число: ");
+// int Number = ToInt32(ReadLine());
+// WriteLine($"Произведение чисел от 1 до {Number} = " + ProductNumbers(Number));
+// int ProductNumbers(int NewNumber)
+// {
+//     int ProdNum = 1;
+//     for (int i = 1; i <= NewNumber; i++)
+//     {
+//         ProdNum *= i;
+//     }
+//     return ProdNum;
+// }
+
+// Семинар 4 - Задача 18: Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+// Например: [1,0,1,1,0,1,0,0].
+// int[] Array = new int[8];
+// for (int i = 0; i < 8; i++)
+// {
+//     Array[i] = new Random().Next(2);
+// }
+// WriteLine($"[{Join(", ", Array)}]");
+// Динамический массив; можно задать длину массива
+// Write("Введите длину массива: ");
+// int ArrayLength = ToInt32(ReadLine());
+// WriteLine($"[{String.Join(", ", Array(ArrayLength))}]");
+// int[] Array(int length)
+// {
+//     int[] array = new int[length];
+//     for (int i = 0; i < length; i++)
+//     {
+//         array[i] = new Random().Next(2);
+//     }
+//     return array;
+// }
+
+// ДЗ 4 - Задача 12: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+// Например: 3, 5 -> 243 (3⁵); 2, 4 -> 16.
+
+
+// ДЗ 4 - Задача 13: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+// Например: 452 -> 11, 82 -> 10, 9012 -> 12.
+
+
+// ДЗ 4 - Задача 14: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// Например: 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]; 6, 1, 33 -> [6, 1, 33].
 
 
 //----------------------------------------------------------------------
