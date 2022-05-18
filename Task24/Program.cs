@@ -17,7 +17,7 @@ int max = 10;
 
 int[,] matrix = GetMatrix(row, col, min, max);
 PrintMatrix(matrix);
-WriteLine("---");
+WriteLine("-----");
 int index = rowNumber(matrix);
 WriteLine($"Номер строки с наименьшей суммой элементов: {index}");
 
