@@ -18,8 +18,8 @@ using static System.Console;
 
 Clear();
 
-int row = 3;
-int col = 3;
+int row = 4;
+int col = 4;
 
 int[,] matrix1 = CreateMatrix(row, col, 1, 10);
 int[,] matrix2 = CreateMatrix(row, col, 1, 10);
