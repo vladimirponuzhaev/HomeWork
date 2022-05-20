@@ -6,14 +6,15 @@ using static System.Console;
 
 Clear();
 
+PrintNumbers(1, 5);
+WriteLine();
+
 void PrintNumbers(int FirstNumber, int LastNumber)
 {
     if (LastNumber < FirstNumber) return;
     PrintNumbers(FirstNumber + 1, LastNumber);
     Write(FirstNumber + " ");
 }
-PrintNumbers(1, 5);
-WriteLine();
 
 int M = 4;
 int N = 8;
