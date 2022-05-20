@@ -57,23 +57,23 @@ int[] FindNumberPosition(int[,] arr, int number)
 
 void PrintArray(int[,] array)
 {
-    System.Console.WriteLine("Массив:");
+    WriteLine("Массив:");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (array[i, j] / 1000 > 0) System.Console.Write($"{array[i, j]}");
-            else if (array[i, j] / 100 > 0) System.Console.Write($" {array[i, j]}");
-            else if (array[i, j] / 10 > 0) System.Console.Write($"  {array[i, j]}");
-            else System.Console.Write($"   {array[i, j]}");
+            if (array[i, j] / 1000 > 0) Write($"{array[i, j]}");
+            else if (array[i, j] / 100 > 0) Write($" {array[i, j]}");
+            else if (array[i, j] / 10 > 0) Write($"  {array[i, j]}");
+            else Write($"   {array[i, j]}");
         }
-        System.Console.WriteLine();
+        WriteLine();
     }
 }
 
 void PrintPosition(int[] pos, int num)
 {
-    System.Console.WriteLine();
+    WriteLine();
     if (pos[0] > 0 && pos[1] > 0) WriteLine($"Число {num} находится в {pos[0]}-й строке, {pos[1]}-м столбце");
     else WriteLine($"Число {num} отсутствует в заданном массиве");
     WriteLine();
@@ -83,7 +83,7 @@ int GetNumberToFind()
 {
     WriteLine();
     Write("Введите число: ");
-    string writeNumber = ReadLine();
+    string writeNumber = ReadLine()!;
     int number = ToInt32(writeNumber);
     return number;
 }
