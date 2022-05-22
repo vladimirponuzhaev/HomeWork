@@ -89,9 +89,9 @@ Clear();
 
 // Семинар 1 – Задача 5: Напишите программу, которая принимает на вход четырёхзначное число и на выходе показывает первую цифру этого числа.
 // Например: 4567 -> 4, 3782 -> 3, 9186 -> 9.
-// int fournumber = ToInt32(ReadLine());
-// int FirstNumber = fournumber / 1000;
-// WriteLine($"Первая цифра четырёхзначного числа - {fournumber} = {FirstNumber}");
+// int FourDigitNumber = ToInt32(ReadLine());
+// int FirstNumber = FourDigitNumber / 1000;
+// WriteLine($"Первая цифра четырёхзначного числа - {FourDigitNumber} = {FirstNumber}");
 
 // ДЗ 1 – Задача 1: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 // Например: a = 5, b = 7 -> max = 7, min = 5; a = 2, b = 10 -> max = 10, min = =2; a = -9, b = -3 -> max = -3, min = -9.
@@ -258,11 +258,11 @@ Clear();
 // }
 // if (DayOfWeek >= 1 && DayOfWeek <= 5)
 // {
-//     WriteLine("Введённая цифра, обозначаюет РАБОЧИЙ день недели!");
+//     WriteLine("Введённая цифра, обозначает РАБОЧИЙ день недели!");
 // }
 // if (DayOfWeek == 6 || DayOfWeek == 7)
 // {
-//     WriteLine("Введённая цифра, обозначаюет выходной день недели - субботу или воскресенье!");
+//     WriteLine("Введённая цифра, обозначает выходной день недели - субботу или воскресенье!");
 // }
 
 // ДЗ 2 - Задача 8: Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
@@ -274,7 +274,7 @@ Clear();
 // WriteLine($"{ThreeDigitNumber} -> {FirstDigit}{SecondDigit}");
 
 // Семинар 3 - Задача 11: Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
-// Наример: 1 -> x > 0 y > 0.
+// Например: 1 -> x > 0 y > 0.
 // WriteLine("Введите номер четверти: ");
 // int quarter = ToInt32(ReadLine());
 // switch (quarter)
@@ -307,16 +307,16 @@ Clear();
 // }
 
 // Семинар 3 - Задача 12: Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка.
-// Наример: // Например: X = -3, Y = 5 -> 2-я четверть.
+// Например: // Например: X = -3, Y = 5 -> 2-я четверть.
 // Write("Введите координату X ≠ 0: ");
 // int coordinateX = ToInt32(ReadLine());
 // Write("Введите координату Y ≠ 0: ");
 // int coordinateY = ToInt32(ReadLine());
-// string Coordinates = coordinateX > 0 && coordinateY > 0 ? $"Введены координаты 1-й чертверти." : coordinateX < 0 && coordinateY > 0 ? $"Введены координаты 2-й чертверти." : coordinateX < 0 && coordinateY < 0 ? $"Введены координаты 3-й чертверти." : coordinateX > 0 && coordinateY < 0 ? $"Введены координаты 4-й чертверти." : $"Введены некорректные координаты X и/или Y!";
+// string Coordinates = coordinateX > 0 && coordinateY > 0 ? $"Введены координаты 1-й четверти." : coordinateX < 0 && coordinateY > 0 ? $"Введены координаты 2-й четверти." : coordinateX < 0 && coordinateY < 0 ? $"Введены координаты 3-й четверти." : coordinateX > 0 && coordinateY < 0 ? $"Введены координаты 4-й четверти." : $"Введены некорректные координаты X и/или Y!";
 // WriteLine(Coordinates);
 
 // Семинар 3 - Задача 13: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве
-// Наример: // A(3, 6), B(2, 1) -> 5,09; A(7, -5), B(1, -1) -> 7,21.
+// Например: // A(3, 6), B(2, 1) -> 5,09; A(7, -5), B(1, -1) -> 7,21.
 // Write("Введите координату X1: ");
 // var X1 = ToInt32(ReadLine());
 // Write("Введите координату Y1: ");
@@ -393,7 +393,7 @@ Clear();
 //     r[i] = new Random().Next(10);
 // }
 // WriteLine(String.Join(", ", t.ToArray())); // Вывод строки через "," t.ToArray - разбей строку t на символы
-// WriteLine(String.Join(", ", r)); // Вывод масссива в строку
+// WriteLine(String.Join(", ", r)); // Вывод массива в строку
 
 // Семинар 4 - Задача 15: Напишите программу, которая принимает на вход число (А) и выдаёт сумму чисел от 1 до А.
 // Например: 7 -> 28, 4 -> 10, 8 -> 36.
@@ -412,7 +412,7 @@ Clear();
 //     return sum;
 // }
 
-// Семинар 4 - Задача 16: Напишите программу, котрая принимает число и выдаёт количество цифр в числе.
+// Семинар 4 - Задача 16: Напишите программу, которая принимает число и выдаёт количество цифр в числе.
 // Например: 23 -> 2, 4 -> 1, 353 -> 3.
 // Write("Введите любое число: ");
 // int number = ToInt32(ReadLine());
@@ -468,17 +468,139 @@ Clear();
 
 // ДЗ 4 - Задача 12: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 // Например: 3, 5 -> 243 (3⁵); 2, 4 -> 16.
+// Write("Введите число A: ");
+// int NumberA = ToInt32(ReadLine());
+// Write("Введите натуральное число B: ");
+// int NumberB = ToInt32(ReadLine());
 
+// WriteLine(NumberB > 1 ? $"{NumberA} ^ {NumberB} = {Pow(NumberA, NumberB)}" : $"Введённое число B: {NumberB}, не является натуральным");
+
+// int Pow(int NumA, int NumB)
+// {
+//     int result = NumA;
+//     while (NumB > 1)
+//     {
+//         result = result * NumA;
+//         NumB--;
+//     }
+//     return result;
+// }
 
 // ДЗ 4 - Задача 13: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 // Например: 452 -> 11, 82 -> 10, 9012 -> 12.
+// Write("Введите любое число: ");
+// int inputNumber = ToInt32(ReadLine());
 
+// WriteLine($"Сумма чисел числа {inputNumber} = {SummaDigits(inputNumber)}");
+
+// int SummaDigits(int number)
+// {
+//     int summa = 0;
+//     while (number > 0)
+//     {
+//         summa = number + summa % 10;
+//         number = number / 10;
+//     }
+//     return summa;
+// }
 
 // ДЗ 4 - Задача 14: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 // Например: 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]; 6, 1, 33 -> [6, 1, 33].
+// int[] Array = new int[8];
+// for (int i = 0; i < Array.Length; i++)
+// {
+//     Array[i] = new Random().Next(0, 100);
+// }
+// WriteLine($"{Join(", ", Array[0..5])} -> [{Join(", ", Array[0..5])}]");
+// WriteLine($"{Join(", ", Array[5..8])} -> [{Join(", ", Array[5..8])}]");
+// int count = new Random().Next(1, 8);
+// Arr(count);
+// Arr(8 - count);
+// void Arr(int arg3)
+// {
+//     int[] Array = new int[arg3];
+//     for (int i = 0; i < arg3; i++)
+//     {
+//         Array[i] = new Random().Next(0, 100);
+//     }
+//     WriteLine($"{Join(", ", Array)} -> [{Join(", ", Array)}]");
+// }
 
+// Семинар 5 - Задача 31: Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. Найдите сумму отрицательных и положительных элементов массива.
+// Например, в массиве [3, 9, -8, 1, 0, -7, 2, -1, 8, -3, -1, 6] сумма положительных чисел равна 29, сумма отрицательных равна -20.
+// int[] Array = GetArray(12, -9, 9);
+// WriteLine($"{Join(" ", Array)}");
 
-//----------------------------------------------------------------------
+// int positiveSum = 0;
+// int negativeSum = 0;
+
+// foreach (int element in Array)
+// {
+//     positiveSum += element > 0 ? element : 0; // иначе - positiveSum = positiveSum + (element > 0 ? element : 0)
+//     negativeSum += element < 0 ? element : 0; // иначе - negativeSum = negativeSum + (element < 0 ? element : 0)
+// }
+// WriteLine($"Сумма положительных элементов = {positiveSum}; Сумма отрицательных элементов = {negativeSum}");
+
+// int[] GetArray(int size, int minValue, int maxValue)
+// {
+//     int[] result = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         result[i] = new Random().Next(minValue, maxValue + 1);
+//     }
+//     return result;
+// }
+
+// Семинар 5 - Задача 32: Напишите программу замена элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
+// Например: [-4, -8, 8, 2] -> [4, 8, -8, -2].
+// int[] Array = GetArray(10, -9, 9);
+// Write($"[{Join(" ", Array)}] -> ");
+
+// int Length = 0;
+// while (Length < Array.Length)
+// {
+//     Array[Length] = Array[Length] * -1;
+//     Length++;
+// }
+// WriteLine($"[{Join(", ", Array)}]");
+
+// int[] GetArray(int Length, int minValue, int maxValue)
+// {
+//     int[] result = new int[Length];
+//     for (int i = 0; i < Length; i++)
+//     {
+//         result[i] = new Random().Next(minValue, maxValue);
+//     }
+//     return result;
+// }
+
+// Семинар 5 - Задача 33: Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
+// Например: 4, массив [6, 7, 19, 345, 3] -> нет; 3, массив[6, 7, 19, 345, 3] -> да.
+// Write("Введите число от 0 до 9: ");
+// int AnyNumber = ToInt32(ReadLine());
+// int[] Array = GetArray(5, 0, 10);
+// WriteLine($"{AnyNumber}, массив [{Join(", ", Array)}] -> {GetNumber(Array, AnyNumber)}");
+
+// int[] GetArray(int Length, int minValue, int maxValue)
+// {
+//     int[] result = new int[Length];
+//     for (int i = 0; i < Length; i++)
+//     {
+//         result[i] = new Random().Next(minValue, maxValue);
+//     }
+//     return result;
+// }
+
+// bool GetNumber(int[] Array, int Number)
+// {
+//     foreach (int element in Array)
+//     {
+//         if (element == AnyNumber) return true;
+//     }
+//     return false;
+// }
+
+//- --------------------------------------------------------------
 
 // using System;
 
