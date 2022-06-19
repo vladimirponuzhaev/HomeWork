@@ -600,6 +600,34 @@ Clear();
 //     return false;
 // }
 
+string[] array = new string[] { "hello", "2", "world", ":-)" };
+
+PrintArray(array);
+Formation(array);
+Write("Итог: ");
+PrintArray(array);
+
+void PrintArray(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Write($"{arr[i]} ");
+    }
+    WriteLine();
+}
+void Formation(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        string element = arr[i];
+        if (element.Length <= 3)
+        {
+            arr[i] = element;
+        }
+        else arr[i] = string.Empty;
+    }
+}
+
 //- --------------------------------------------------------------
 
 // using System;
